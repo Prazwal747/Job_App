@@ -1,15 +1,14 @@
 package com.app.demo.controller;
 
 import com.app.demo.DTO.JobDto;
-import com.app.demo.module.Job;
 import com.app.demo.service.JobService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController()
 @CrossOrigin("*")
+@RequestMapping("/api/v0.1/job")
 public class JobController {
 
     private JobService jobService;
